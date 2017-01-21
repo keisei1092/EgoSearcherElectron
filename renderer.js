@@ -8,6 +8,8 @@ const { shell } = require('electron');
 const Twitter = require('ntwitter');
 const client = new Twitter(twitterClidentials);
 
+let searchQuery = '';
+
 function startTrackingTweets() {
   const textBox = $('input[name=query]')
   const newSearchQuery = textBox.val();
