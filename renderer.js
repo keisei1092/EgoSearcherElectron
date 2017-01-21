@@ -12,7 +12,6 @@ const SEARCH_QUERY = 'Osanzi';
 
 client.stream('statuses/filter', { track: SEARCH_QUERY }, function(stream) {
   stream.on('data', function(data) {
-    debugger;
     new Notification(data.text);
   });
 });
