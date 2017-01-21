@@ -18,7 +18,6 @@ function createWindow () {
     height: 160,
     frame: false
   })
-  mainWindow.setAlwaysOnTop(true);
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
