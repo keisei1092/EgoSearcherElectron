@@ -47,3 +47,5 @@ jspm_packages
 .yarn-integrity
 
 node_modules
+
+twitter_clidentials.js
