@@ -17,10 +17,22 @@ function startTrackingTweets() {
 
   client.stream('statuses/filter', { track: searchQuery }, function(stream) {
     stream.on('data', function(data) {
-      new Notification(data.text);
+      const title = searchQuery + ' についてのあたらしいツイート';
+      const body = data.text;
+      const iconUrl = data.user.profile_image_url_https;
+      spawnNotification(title, body, iconUrl);
     });
     client.currentTwitterStream = stream;
   });
+}
+
+function spawnNotification(title, body, iconUrl) {
+  const options = {
+    body: body,
+    icon: iconUrl
+  }
+
+  const notification = new Notification(title, options);
 }
 
 window.startTrackingTweets = startTrackingTweets;
