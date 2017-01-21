@@ -118,6 +118,10 @@ concat-stream@1.5.0:
     readable-stream "~2.0.0"
     typedarray "~0.0.5"
 
+cookies@0.1.x:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/cookies/-/cookies-0.1.6.tgz#2129588b8b1e382ffba990d9f9cf9ddf2c142846"
+
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -458,6 +462,10 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
+keygrip@0.2.x:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/keygrip/-/keygrip-0.2.4.tgz#9dd1b2e485a1162c9d4e6f787de87fc50f87bc58"
+
 klaw@^1.0.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
@@ -543,6 +551,14 @@ normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
     semver "2 || 3 || 4 || 5"
     validate-npm-package-license "^3.0.1"
 
+ntwitter@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ntwitter/-/ntwitter-0.5.0.tgz#30c40105f82432fa8956a4f7655de932af631534"
+  dependencies:
+    cookies "0.1.x"
+    keygrip "0.2.x"
+    oauth ">=0.8.4"
+
 nugget@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/nugget/-/nugget-2.0.1.tgz#201095a487e1ad36081b3432fa3cada4f8d071b0"
@@ -562,6 +578,10 @@ number-is-nan@^1.0.0:
 oauth-sign@~0.8.1:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
+
+oauth@>=0.8.4:
+  version "0.9.15"
+  resolved "https://registry.yarnpkg.com/oauth/-/oauth-0.9.15.tgz#bd1fefaf686c96b75475aed5196412ff60cfb9c1"
 
 object-assign@^4.0.1:
   version "4.1.1"
