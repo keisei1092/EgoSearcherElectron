@@ -17,9 +17,12 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.15"
   },
   "dependencies": {
+    "electron-packager": "^8.5.0",
+    "electron-prebuilt": "^1.4.13",
+    "global": "^4.3.1",
     "jquery": "^3.1.1",
     "ntwitter": "^0.5.0",
     "twitter": "^1.7.0"
