@@ -8,11 +8,18 @@ const { shell } = require('electron');
 const Twitter = require('ntwitter');
 const client = new Twitter(twitterClidentials);
 
-const SEARCH_QUERY = 'Osanzi';
+function startTrackingTweets() {
+  const textBox = $('input[name=query]')
+  const newSearchQuery = textBox.val();
+  searchQuery = newSearchQuery;
 
-client.stream('statuses/filter', { track: SEARCH_QUERY }, function(stream) {
-  stream.on('data', function(data) {
-    new Notification(data.text);
+  client.stream('statuses/filter', { track: searchQuery }, function(stream) {
+    stream.on('data', function(data) {
+      new Notification(data.text);
+    });
+    client.currentTwitterStream = stream;
   });
-});
+}
+
+window.startTrackingTweets = startTrackingTweets;
 
